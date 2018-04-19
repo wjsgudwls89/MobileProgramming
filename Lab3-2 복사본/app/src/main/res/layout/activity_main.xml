@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.hj.lab3_2.MainActivity"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:stretchColumns="1">
+
+        <TableRow>
+
+            <TextView android:text="성명" />
+
+            <EditText android:id="@+id/edittext"
+               />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="성별" />
+            <RadioGroup android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/man"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="남" />
+                <RadioButton
+                    android:id="@+id/woman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여" />
+            </RadioGroup>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="수신여부 " />
+            <LinearLayout>
+            <CheckBox
+                android:id="@+id/sms"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="SMS" />
+            <CheckBox
+                android:id="@+id/email"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="e-mail" />
+             </LinearLayout>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/button"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_column="2"
+                android:text="등록"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
